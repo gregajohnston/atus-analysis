@@ -44,4 +44,4 @@ Thumbs.db
 .direnv
 __pycache__
 *.pyc
-.ipynb/checkpoint/
+.ipynb_checkpoints/
