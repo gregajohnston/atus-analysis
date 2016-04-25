@@ -5,6 +5,8 @@ from pandas import DataFrame, Series
 from atus_analysis import importer
 
 df_init = importer(5)
+
+
 class AtusAnalysisTest(unittest.TestCase):
 
     def test_read_data(self):
