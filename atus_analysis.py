@@ -99,3 +99,21 @@ def draw_plot_four():
     plt.ylabel('Total Minutes Spent Watching', fontsize=14)
     plt.xlabel('Total Minutes Spent Playing', fontsize=14)
     plt.show()
+
+
+def draw_corr_one():
+    df['Time_with_family'] = df['TRTFAMILY']
+    df['Number_of_children'] = df['TRCHILDNUM_x']
+    return df[['Time_with_family', 'Number_of_children']].corr()
+
+
+def draw_corr_two():
+    df['Time_with_family'] = df['TRTFAMILY']
+    df['Employment_status'] = df['TELFS_x']
+    return df[['Time_with_family', 'Employment_status']].corr()
+
+
+def draw_corr_three():
+    df['Time_with_family'] = df['TRTFAMILY']
+    df['Respondent_gender'] = df['TESEX']
+    return df[['Time_with_family', 'Respondent_gender']].corr()
